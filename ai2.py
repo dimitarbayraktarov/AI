@@ -1,6 +1,5 @@
 import random
 
-# Predefined responses for different categories
 responses = {
     "greeting": [
         "Hello! How can I assist you today?",
@@ -10,7 +9,7 @@ responses = {
         "Hey! It's great to see you!",
     ],
     "farewell": [
-        "Goodbye! Have a great day!",
+        "Goodbye! Have a nice day!",
         "See you later! Take care.",
         "Thanks for chatting. Talk to you soon!",
         "Catch you later! Don't hesitate to reach out again.",
@@ -76,24 +75,19 @@ responses = {
     ],
 }
 
-# Helper function to choose a random response from a category
 def get_response(category):
     return random.choice(responses.get(category, ["I'm not sure how to respond to that."]))
 
-# Main chatbot function
 def chatbot():
     print("Hello! I’m your chatbot. Type 'quit' to exit.")
     
     while True:
-        # Get user input
         user_input = input("You: ").lower()
         
-        # Exit the chatbot if user types 'quit'
         if user_input == "quit":
             print("Goodbye! Have a great day!")
             break
         
-        # Determine response category based on user input
         if "hello" in user_input or "hi" in user_input or "hey" in user_input:
             response = get_response("greeting")
         elif "bye" in user_input or "goodbye" in user_input or "see you" in user_input:
@@ -115,9 +109,7 @@ def chatbot():
         else:
             response = get_response("error")
         
-        # Print the chatbot's response
         print(f"Bot: {response}")
 
-# Run the chatbot
 if __name__ == "__main__":
     chatbot()
