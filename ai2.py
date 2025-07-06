@@ -27,13 +27,6 @@ responses = {
         "I’m having trouble understanding. Could you say that again in a different way?",
         "I'm not sure what you mean, can you clarify?",
     ],
-    "joke": [
-        "Why don’t skeletons fight each other? They don’t have the guts!",
-        "I’m terrible at math, but I know a lot of ways to add value to your day!",
-        "What’s orange and sounds like a parrot? A carrot!",
-        "Why did the scarecrow win an award? Because he was outstanding in his field!",
-        "How does a penguin build its house? Igloos it together!",
-    ],
     "small_talk": [
         "How are you doing today?",
         "What’s on your mind?",
@@ -41,6 +34,7 @@ responses = {
         "Is there something you want to talk about?",
         "What have you been up to recently?",
         "How’s your day been going so far?",
+        "How's the weather?",
     ],
     "confirmation": [
         "I’ve got everything covered. Let me know if anything else comes up.",
