@@ -73,13 +73,13 @@ def get_response(category):
     return random.choice(responses.get(category, ["I'm not sure how to respond to that."]))
 
 def chatbot():
-    print("Hello! I’m your chatbot. Type 'quit' to exit.")
+    print("Hello! I’m your chatbot. Type 'adios' to exit.")
     
     while True:
         user_input = input("You: ").lower()
         
-        if user_input == "quit":
-            print("Goodbye! Have a great day!")
+        if user_input == "adios":
+            print("Adios, muchachos!")
             break
         
         if "hello" in user_input or "hi" in user_input or "hey" in user_input:
